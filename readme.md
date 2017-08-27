@@ -22,7 +22,7 @@ Have JDK installed.
 
 Using basic **curl** syntax or a tool like **Postman** for example, the service supports following requests:
 
-POST request to create an offer:
+**POST** request to create an offer:
 
 http://{hostname}:{port}/offer-service/offers?merchant={merchant}
 
@@ -40,7 +40,7 @@ If the currency is not an ISO 4217 currency code, the server will return an exce
 	Successfully created offer {name} for {merchant}
 
 
-GET request to retrieve a list of the created offers by merchant:
+**GET** request to retrieve a list of the created offers by merchant:
 
 http://{hostname}:{port}/offer-service/offers?merchant={merchant}
 
@@ -61,7 +61,7 @@ http://{hostname}:{port}/offer-service/offers?merchant={merchant}
 		...
 	]
 
-GET request to retrieve a list of all the created offers in the system:
+**GET** request to retrieve a list of all the created offers in the system:
 
 http://{hostname}:{port}/offer-service/alloffers
 
@@ -93,7 +93,7 @@ http://{hostname}:{port}/offer-service/alloffers
 	}
 
 
-PUT request to update a previously created offer of a merchant:
+**PUT** request to update a previously created offer of a merchant:
 
 http://{hostname}:{port}/offer-service/offers?merchant={merchant}&offerName={offerName}
 
@@ -108,7 +108,7 @@ http://{hostname}:{port}/offer-service/offers?merchant={merchant}&offerName={off
  Successfully updated offer {offerName}
 
 <br /><br />
-DELETE request to delete a previously created offer of a merchant
+**DELETE** request to delete a previously created offer of a merchant
 
 http://{hostname}:{port}/offer-service/offers?merchant={merchant}&offerName={offerName}
 

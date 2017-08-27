@@ -107,7 +107,7 @@ http://{hostname}:{port}/offer-service/offers?merchant={merchant}&offerName={off
 #### Response Body example
  Successfully updated offer {offerName}
 
-
+<br /><br />
 DELETE request to delete a previously created offer of a merchant
 
 http://{hostname}:{port}/offer-service/offers?merchant={merchant}&offerName={offerName}

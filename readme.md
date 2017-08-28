@@ -112,8 +112,6 @@ http://{hostname}:{port}/offer-service/offers?merchant={merchant}&offerName={off
 
 http://{hostname}:{port}/offer-service/offers?merchant={merchant}&offerName={offerName}
 
-#### Response Body example
-Successfully deleted offer {offerName}
 
 
 ## Running the service

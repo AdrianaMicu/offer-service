@@ -51,9 +51,8 @@ public class OfferRepositoryImpl implements OfferRepository {
 				.findFirst();
 	}
 
-	public String deleteOffer(String merchant, Offer offer) {
+	public void deleteOffer(String merchant, Offer offer) {
 		Set<Offer> offers = merchantOffersMap.get(merchant);
 		offers.remove(offer);
-		return "Successfully deleted offer " + offer.getName();
  	}
 }

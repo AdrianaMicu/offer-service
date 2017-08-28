@@ -52,9 +52,9 @@ public class OfferController {
 	}
 
 	@RequestMapping(value = OFFER_URL, method = RequestMethod.DELETE)
-	public String deleteOffer(
+	public void deleteOffer(
 			@RequestParam(required = true) String merchant,
 			@RequestParam(required = true) String offerName) {
-		return offerService.deleteOffer(merchant, offerName);
+		offerService.deleteOffer(merchant, offerName);
 	}
 }

@@ -44,8 +44,8 @@ public class OfferServiceImpl implements OfferService {
 		return offerRepo.updateOffer(merchant, offerToUpdate);
 	}
 
-	public String deleteOffer(String merchant, String offerName) {
+	public void deleteOffer(String merchant, String offerName) {
 		Offer offerToDelete = offerRepo.getOffer(merchant, offerName).orElseThrow(() -> new OfferException(String.format("Offer %s for merchant %s not found", offerName, merchant)));
-		return offerRepo.deleteOffer(merchant, offerToDelete);
+		offerRepo.deleteOffer(merchant, offerToDelete);
 	}
 }

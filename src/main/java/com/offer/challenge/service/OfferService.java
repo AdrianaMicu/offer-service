@@ -12,7 +12,7 @@ public interface OfferService {
 
 	String updateOffer(String merchant, String offerName, UpdateOfferRequest updateOfferRequest);
 
-	String deleteOffer(String merchant, String offerName);
+	void deleteOffer(String merchant, String offerName);
 
 	Set<Offer> getOffers(String merchant);
 

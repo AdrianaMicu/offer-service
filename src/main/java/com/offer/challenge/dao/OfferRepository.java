@@ -12,7 +12,7 @@ public interface OfferRepository {
 
 	String updateOffer(String merchant, Offer offer);
 
-	String deleteOffer(String merchant, Offer offer);
+	void deleteOffer(String merchant, Offer offer);
 
 	Optional<Offer> getOffer(String merchant, String offerName);
 
